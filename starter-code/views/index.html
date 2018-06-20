@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Freja und Elliot sehr kreativ
+  </title>
+</head>
+
+<body>
+  
+  <label for="From">From</label>
+  <input id="startDate" type="date" name="from">
+
+  <label for="To">To</label>
+  <input id="endDate" type="date" name="to">
+<br>
+  <label for="Currency">Currency</label>
+  <select id="currency" name="currency">
+    <option id="USD" value="USD">US$</option>
+    <option value="GBP">GBP</option>
+    <option value="EUR">€UR</option>
+  </select>
+
+  <div>
+    <h1>Values</h1>
+    <p>Max: <span id="max">Können wir ändern</span></p>
+    <p>Max: <span id="min">Können wir ändern</span></p>
+  </div>
+
+  <canvas id="myChart"></canvas>
+</body>
+<!-- LOADING ALL NEEDED SCRIPT IN AN ORDER THAT MAKES SENSE -->
+<!-- Check, if there are scripts, which are more up to date -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!--4. YOUR OWN JS-FUNCTIONALITY-FILES stored in "public/javascript/.." -->
+<script src="../public/javascripts/financial-data.js" charset="utf-8"></script>
+
+</html>
